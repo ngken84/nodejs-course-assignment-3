@@ -3,6 +3,16 @@
 <%- include('./includes/head.ejs') %>
 <body>
     <%- include('includes/nav.ejs') %>
-    Users
+    <h1>Users</h1>
+    <% if(users.length > 0) { %>
+        <ul>
+            <% for (let user of users) { %>
+                <li><%= user %></li>
+            <% } %>
+        </ul>
+
+    <% } else { %>
+        <div>No users found!</div>
+    <% } %>
 </body>
 </html>

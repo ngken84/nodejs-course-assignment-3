@@ -3,6 +3,9 @@
 <%- include('includes/head.ejs') %>
 <body>
     <%- include('includes/nav.ejs') %>
-    Home
+    <form action="/create" method="POST">
+        <input name="user" type="text">
+        <button action="submit">CREATE</button>
+    </form>
 </body>
 </html>
